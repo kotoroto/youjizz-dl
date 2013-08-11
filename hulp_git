@@ -1,0 +1,3 @@
+git add *                   = alle bestanden toevoegen aan de index (2de fase)
+git commit -m "<boodschap>" = alle bestanden toevoegen aan de head  (3de fase)
+git push origin master      = alle bestanden van de head doorsturen naar de GitHub-website
