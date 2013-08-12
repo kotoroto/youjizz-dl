@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # Dependencies:
-# python2-requests, python2-mechanize,
+# python2-mechanize,
 
 import sys, os, urlgrabber, mechanize, re
 import urllib2
