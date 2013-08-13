@@ -1,0 +1,8 @@
+To do:  
+======  
+- Thread the downloader so that we can measure download speeds in real-time  
+- Optimize the setup.py file: users should be able to install this application by just typing:
+```sudo python2.7 setup.py install```  
+- Include dependency checks in this installation process
+- Create a small man page
+- Keep this application as small and simple as possible

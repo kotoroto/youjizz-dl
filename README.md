@@ -18,9 +18,10 @@ python2-colorama
 Usage
 -----
 youjizz-dl [OPTIONS] [URL]  
+
 Available options:  
 -a	save as acronym: e.g. 'a video about a man and a woman.flv' becomes 'avaamaaw.flv'  
 -i	save as unique YouJizz video ID  
 -r	save as a random number  
-
+-n	save as
 
