@@ -76,16 +76,10 @@ class Downloader():
                 
         print self.opslaantitel
         
-        
         self.embedpagina_url = "http://www.youjizz.com/videos/embed/" + self.videoid
-        
-        
         
         #print titelopties
         #print self.normale_pagina_url
-        
-        
-        
         
     def openEmbedpagina(self):
         sys.stdout.write("URL is........"),
@@ -157,9 +151,13 @@ class Downloader():
         self.avg_speed = self.file_size_in_kb/(self.delta.seconds)
         self.avg_speed_string_length = len(str(self.avg_speed))
         
-        sys.stdout.write("Avg speed....." + Style.BRIGHT + Fore.RESET + "[" + Fore.GREEN + " " * ((6-self.file_size_in_mb_string_length)/2) + str(self.avg_speed) + " " * ((6-self.file_size_in_mb_string_length)/2) + Fore.RESET + "]" + Style.RESET_ALL + "\n")
-        sys.stdout.flush() ## Moet nog aan gewerkt worden! Hij moet bvb 192 netjes in het midden zetten, als dat niet gaat, evt li 1 en re 2 vrijlaten.
-        ## OPLOSSING: gewoon een len() invoegen en twee ifs.
+        if self.avg_speed_string_length = 2: ## This needs to be cleaned up, by putting it in one definition.
+            sys.stdout.write("Avg speed....." + Style.BRIGHT + Fore.RESET + "[  " + Fore.GREEN + str(self.avg_speed) + "  ]" + Style.RESET_ALL + "\n")
+        elif self.avg_speed_string_length = 3:
+            sys.stdout.write("Avg speed....." + Style.BRIGHT + Fore.RESET + "[ " + Fore.GREEN + str(self.avg_speed) + "  ]" + Style.RESET_ALL + "\n")
+        else:
+             sys.stdout.write("Avg speed....." + Style.BRIGHT + Fore.RESET + "[" + Fore.GREEN + str(self.avg_speed) + "  ]" + Style.RESET_ALL + "\n")
+        sys.stdout.flush() 
         
         print("Completed on.." + Style.BRIGHT + Fore.RESET + "[" + Fore.GREEN + strftime("%H%M%S") + Fore.RESET + "]" + Style.RESET_ALL)
         
