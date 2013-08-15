@@ -23,5 +23,10 @@ Available options:
 -a	save as acronym: e.g. 'a video about a man and a woman.flv' becomes 'avaamaaw.flv'  
 -i	save as unique YouJizz video ID  
 -r	save as a random number  
--n	save as
+-n	save as normal video title, with dashes instead of spaces  
+-s	secret-mode: precedes the title with a dot to hide the file ('atgsw.flv' --> '.atgsw.flv')  
+-t	top-secret-mode: creates the hidden directory ./.bin if it doesn't already exist, and puts the downloaded video in that directory.
+-h	print this help message  
+
+
 

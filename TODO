@@ -9,6 +9,9 @@ process.
 - Create a small man page  
 - Keep this application as small and simple as possible  
 - Maybe add some command-line options, like:  
+  * -s: secret mode: hides each file by putting a dot in front of it. Can be used with other title options.
+  * -t: top-secret mode: creates a folder called bin/ (if not already existing) and puts the downloaded files in there. Can be used with other 
+title options.
   * -v: verbose mode
   * -q: quiet mode
   * -h: 'print this help message and exit'
