@@ -31,7 +31,7 @@ Available options:
 FAQ  
 ---  
 Q: Why create youjizz-dl? youtube-dl already is capable of downloading videos from YouJizz.com.  
-A: True, but youtube-dl doesn't support a lot of privacy options out-of-the-box. You'd have to script them yourself, whereas youjizz-dl 
+A: Although youtube-dl is a great tool, it doesn't have a lot of options to protect your privacy. You'd have to script them yourself, whereas youjizz-dl 
 enables you to change video titles to your likings by just putting the desired flag in the command.  
   
 Q: Are you planning on adding support for more websites?  

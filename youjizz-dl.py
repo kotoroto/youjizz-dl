@@ -6,7 +6,7 @@
 
 import sys, os, urlgrabber, mechanize, re
 import urllib2
-import terminalwaarschuwingen as tw
+import youjizz_dl_warnings as tw
 import getopt
 import random
 from colorama import Fore, init, Style ## Deze installeren uit repo's
@@ -151,9 +151,9 @@ class Downloader():
         self.avg_speed = self.file_size_in_kb/(self.delta.seconds)
         self.avg_speed_string_length = len(str(self.avg_speed))
         
-        if self.avg_speed_string_length = 2: ## This needs to be cleaned up, by putting it in one definition.
+        if self.avg_speed_string_length == 2: ## This needs to be cleaned up, by putting it in one definition.
             sys.stdout.write("Avg speed....." + Style.BRIGHT + Fore.RESET + "[  " + Fore.GREEN + str(self.avg_speed) + "  ]" + Style.RESET_ALL + "\n")
-        elif self.avg_speed_string_length = 3:
+        elif self.avg_speed_string_length == 3:
             sys.stdout.write("Avg speed....." + Style.BRIGHT + Fore.RESET + "[ " + Fore.GREEN + str(self.avg_speed) + "  ]" + Style.RESET_ALL + "\n")
         else:
              sys.stdout.write("Avg speed....." + Style.BRIGHT + Fore.RESET + "[" + Fore.GREEN + str(self.avg_speed) + "  ]" + Style.RESET_ALL + "\n")
